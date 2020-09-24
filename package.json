@@ -9,13 +9,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "-": "0.0.1",
+    "browser-sync": "^2.26.12",
     "date-fns": "^2.16.1",
-    "node-env-file": "^0.1.8",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
     "request": "^2.88.2"
+  },
+  "config": {
+    "longitude": "-5.0507",
+    "latitude": "49.262951"
   },
   "prettier": {
     "trailingComma": "es5",
-    "tabWidth": 2,
+    "tabWidth": 4,
     "semi": false,
     "singleQuote": true
   }

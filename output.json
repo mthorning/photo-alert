@@ -1,0 +1,27 @@
+{"tides": [
+    {
+      "timestamp": 1600985345,
+      "datetime": "2020-09-24T22:09:05+00:00",
+      "height": 1.290853928951597,
+      "state": "HIGH TIDE"
+    },
+    {
+      "timestamp": 1601009560,
+      "datetime": "2020-09-25T04:52:40+00:00",
+      "height": -1.2517631018844584,
+      "state": "LOW TIDE"
+    },
+    {
+      "timestamp": 1601030632,
+      "datetime": "2020-09-25T10:43:52+00:00",
+      "height": 1.2827344900990725,
+      "state": "HIGH TIDE"
+    },
+    {
+      "timestamp": 1601056003,
+      "datetime": "2020-09-25T17:46:43+00:00",
+      "height": -1.2670614180865472,
+      "state": "LOW TIDE"
+    }
+  ],"weather":{"time":{"values":["2020-09-25T05:00Z","2020-09-25T06:00Z","2020-09-25T07:00Z"]},"screenTemperature":{"values":[10.698827,10.565534,10.687089],"description":"Screen Air Temperature"},"maxScreenAirTemp":{"values":[10.939607,10.944368,10.760299],"description":"Maximum Screen Air Temperature Over Previous Hour"},"minScreenAirTemp":{"values":[10.599174,10.418512,10.376166],"description":"Minimum Screen Air Temperature Over Previous Hour"},"screenDewPointTemperature":{"values":[6.7589426,6.7816515,6.765359],"description":"Screen Dew Point Temperature"},"feelsLikeTemperature":{"values":[6.3468375,6.437985,6.9113507],"description":"Feels Like Temperature"},"windSpeed10m":{"values":[12.178976,11.205012,9.7812805],"description":"10m Wind Speed"},"windDirectionFrom10m":{"values":[336,342,336],"description":"10m Wind From Direction"},"windGustSpeed10m":{"values":[19.020504,17.426477,15.578587],"description":"10m Wind Gust Speed"},"max10mWindGust":{"values":[18.507004,16.904217,15.383642],"description":"Maximum 10m Wind Gust Speed Over Previous Hour"},"visibility":{"values":[22121,33153,31590],"description":"Visibility"},"screenRelativeHumidity":{"values":[76.32599,77.054344,76.530365],"description":"Screen Relative Humidity"},"mslp":{"values":[100575,100739,100886],"description":"Mean Sea Level Pressure"},"uvIndex":{"values":[0,0,1],"description":"UV Index"},"significantWeatherCode":{"values":[9,13,3],"description":"Significant Weather Code"},"precipitationRate":{"values":[0.2969172,0.64782494,0],"description":"Precipitation Rate"},"totalPrecipAmount":{"values":[0.21140873,0.14263467,0],"description":"Total Precipitation Amount Over Previous Hour"},"totalSnowAmount":{"values":[0,0,0],"description":"Total Snow Amount Over Previous Hour"},"probOfPrecipitation":{"values":[39,58,13],"description":"Probability of Precipitation"}},"geoData":{"location":{"latitude":49.263,"longitude":-5.0507},"date":"2020-09-25","current_time":"18:56:56.546","sunrise":"07:11","sunset":"19:11","sun_status":"-","solar_noon":"13:11","day_length":"12:00","sun_altitude":1.453560470063573,"sun_distance":150023655.78194636,"sun_azimuth":266.40171899847815,"moonrise":"16:43","moonset":"-:-","moon_status":"-","moon_altitude":13.2018923520468,"moon_distance":381152.60759722197,"moon_azimuth":155.1140474882227,"moon_parallactic_angle":-2.1646768048666445}}
+  
