@@ -1,0 +1,188 @@
+{
+    "disclaimer": "NOT SUITABLE FOR NAVIGATIONAL PURPOSES. API Hood does not warrant that the provided data will be free from errors or omissions. Provided data are NOT suitable for usage where someone could be harmed or suffer any damage.",
+    "status": 200,
+    "latitude": 49.262951,
+    "longitude": -5.0507,
+    "origin": {
+        "latitude": 49.25,
+        "longitude": -5.0625,
+        "distance": 1.68,
+        "unit": "km"
+    },
+    "datums": {
+        "LAT": -3.524190673828125,
+        "HAT": 3.3088690185546876
+    },
+    "timestamp": 1601062996,
+    "datetime": "2020-09-25T19:43:16+00:00",
+    "unit": "m",
+    "timezone": "UTC",
+    "datum": "MSL",
+    "extremes": [
+        {
+            "timestamp": 1601077075,
+            "datetime": "2020-09-25T23:37:55+00:00",
+            "height": 1.0257117987601927,
+            "state": "HIGH TIDE"
+        },
+        {
+            "timestamp": 1601101701,
+            "datetime": "2020-09-26T06:28:21+00:00",
+            "height": -1.1246434432101862,
+            "state": "LOW TIDE"
+        },
+        {
+            "timestamp": 1601122954,
+            "datetime": "2020-09-26T12:22:34+00:00",
+            "height": 1.1826081046157086,
+            "state": "HIGH TIDE"
+        }
+    ],
+    "heights": [
+        {
+            "timestamp": 1601062996,
+            "datetime": "2020-09-25T19:43:16+00:00",
+            "height": -0.7222476322555831,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601066596,
+            "datetime": "2020-09-25T20:43:16+00:00",
+            "height": -0.09866458931405102,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601070196,
+            "datetime": "2020-09-25T21:43:16+00:00",
+            "height": 0.5260761509469452,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601073796,
+            "datetime": "2020-09-25T22:43:16+00:00",
+            "height": 0.9222097225047955,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601077396,
+            "datetime": "2020-09-25T23:43:16+00:00",
+            "height": 1.0248853931541768,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601080996,
+            "datetime": "2020-09-26T00:43:16+00:00",
+            "height": 0.9236535007127182,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601084596,
+            "datetime": "2020-09-26T01:43:16+00:00",
+            "height": 0.6873014978250113,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601088196,
+            "datetime": "2020-09-26T02:43:16+00:00",
+            "height": 0.3006324263422819,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601091796,
+            "datetime": "2020-09-26T03:43:16+00:00",
+            "height": -0.21432684393959683,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601095396,
+            "datetime": "2020-09-26T04:43:16+00:00",
+            "height": -0.7172679792628333,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601098996,
+            "datetime": "2020-09-26T05:43:16+00:00",
+            "height": -1.0457126964476025,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601102596,
+            "datetime": "2020-09-26T06:43:16+00:00",
+            "height": -1.1156835271612988,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601106196,
+            "datetime": "2020-09-26T07:43:16+00:00",
+            "height": -0.890951294501381,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601109796,
+            "datetime": "2020-09-26T08:43:16+00:00",
+            "height": -0.37649658925998586,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601113396,
+            "datetime": "2020-09-26T09:43:16+00:00",
+            "height": 0.288043110584478,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601116996,
+            "datetime": "2020-09-26T10:43:16+00:00",
+            "height": 0.8491002799170018,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601120596,
+            "datetime": "2020-09-26T11:43:16+00:00",
+            "height": 1.1372267046908078,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601124196,
+            "datetime": "2020-09-26T12:43:16+00:00",
+            "height": 1.1719214992396056,
+            "state": "RISING"
+        },
+        {
+            "timestamp": 1601127796,
+            "datetime": "2020-09-26T13:43:16+00:00",
+            "height": 1.0332543627885569,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601131396,
+            "datetime": "2020-09-26T14:43:16+00:00",
+            "height": 0.7216685876641833,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601134996,
+            "datetime": "2020-09-26T15:43:16+00:00",
+            "height": 0.21466293122176996,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601138596,
+            "datetime": "2020-09-26T16:43:16+00:00",
+            "height": -0.40073748924495667,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601142196,
+            "datetime": "2020-09-26T17:43:16+00:00",
+            "height": -0.9480084167564455,
+            "state": "FALLING"
+        },
+        {
+            "timestamp": 1601145796,
+            "datetime": "2020-09-26T18:43:16+00:00",
+            "height": -1.2849716062749132,
+            "state": "FALLING"
+        }
+    ],
+    "copyright": "©2019 API Hood. Generated using AVISO+ Products."
+}

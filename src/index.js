@@ -9,18 +9,15 @@ const getWeather = require('./weather.js')
 const getTides = require('./tide.js')
 const collate = require('./collate.js')
 const makeHTML = require('./html.js')
-
-//test files
-const tides = require('./tideData.js')
-const data = require('./output.json')
+const email = require('./email.js')
 
 async function run() {
-  // const tomorrow = addDays(new Date(), 1)
-  // const geoData = await getGeoTimes(format(tomorrow, 'yyyy-MM-dd'))
-  // const weather = await getWeather()
-  // const tides = await getTides()
-  // const data = collate({ tides, geoData, weather, tomorrow })
-  makeHTML(data)
+    const tomorrow = addDays(new Date(), 1)
+    const geoData = await getGeoTimes(format(tomorrow, 'yyyy-MM-dd'))
+    const weather = await getWeather()
+    const tides = await getTides()
+    const data = collate({ tides, geoData, weather, tomorrow })
+    email(makeHTML(data))
 }
 
 run()

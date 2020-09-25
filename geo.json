@@ -1,0 +1,23 @@
+{
+    "location": {
+        "latitude": 49.263,
+        "longitude": -5.0507
+    },
+    "date": "2020-09-26",
+    "current_time": "20:43:15.472",
+    "sunrise": "07:13",
+    "sunset": "19:08",
+    "sun_status": "-",
+    "solar_noon": "13:11",
+    "day_length": "11:55",
+    "sun_altitude": -16.070056076914724,
+    "sun_distance": 149981200.41891354,
+    "sun_azimuth": 286.75028924049974,
+    "moonrise": "17:25",
+    "moonset": "00:54",
+    "moon_status": "-",
+    "moon_altitude": 17.931986958832717,
+    "moon_distance": 386248.6463035489,
+    "moon_azimuth": 166.62336472647985,
+    "moon_parallactic_angle": 8.274523420555527
+}
