@@ -2,8 +2,8 @@ const { format, addDays } = require('date-fns')
 const sigWeatherCodes = require('./significantWeatherCodes.js')
 const fs = require('fs')
 
-function transform(key, value) {
-    return `${value}${key === 'significantWeatherCode' ? '*' : ''}`
+function transform(value) {
+    return /\./.test(value) ? value.toFixed(2) : value
 }
 
 function makeWeatherTable(times, weatherData) {
@@ -28,12 +28,11 @@ function makeWeatherTable(times, weatherData) {
             .map(
                 ([key, { values, description }]) =>
                     `<tr>
-                <td ${style(0)}>${description}</td>
+                <td ${style(0)}>${description}${
+                        key === 'significantWeatherCode' ? ' *' : ''
+                    }</td>
                 ${values
-                    .map(
-                        (value) =>
-                            `<td ${style(1)}>${transform(key, value)}</td>`
-                    )
+                    .map((value) => `<td ${style(1)}>${transform(value)}</td>`)
                     .join('')}
             </tr>`
             )
@@ -59,7 +58,7 @@ function makeTidesList(tides) {
     `
 }
 
-module.exports = function makeHTML({ tides, weather, geoData }) {
+module.exports = function makeHTML({ modelRunDate, tides, weather, geoData }) {
     const {
         time: { values: times },
         ...weatherData
@@ -70,6 +69,7 @@ module.exports = function makeHTML({ tides, weather, geoData }) {
     const report = `
     <h1>Weather Report</h1>
     <h2>${format(new Date(geoData.date), 'yyyy-MM-dd')}</h2>
+    <h6>Report generated: ${format(new Date(modelRunDate), 'HH:mm:ss')}</h6>
     <h3>Sun</h3>
     <div>Sunrise: ${geoData.sunrise}</div>
     <div>Sunset: ${geoData.sunset}</div>

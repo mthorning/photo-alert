@@ -12,8 +12,10 @@ function getIntervals(timeSeries, sunriseHour, tomorrow) {
 }
 
 module.exports = function collate({ tides, geoData, weather, tomorrow }) {
+    const { timeSeries, modelRunDate } = weather.features[0].properties
+
     const intervals = getIntervals(
-        weather.features[0].properties.timeSeries,
+        timeSeries,
         Number(geoData.sunrise.slice(0, 2)),
         tomorrow
     )
@@ -36,5 +38,10 @@ module.exports = function collate({ tides, geoData, weather, tomorrow }) {
         {}
     )
 
-    return { weather: forecastData, geoData, tides: tides.extremes }
+    return {
+        modelRunDate,
+        weather: forecastData,
+        geoData,
+        tides: tides.extremes,
+    }
 }
