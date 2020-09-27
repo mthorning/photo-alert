@@ -6,7 +6,7 @@ const {
 
 module.exports = function getTides() {
     return request({
-        name: 'tide',
+        name: 'data-tide',
         url: `https://tides.p.rapidapi.com/tides?latitude=${latitude}&longitude=${longitude}`,
         options: {
             headers: {

@@ -7,7 +7,7 @@ const {
 
 module.exports = function getGeoTimes(date) {
     return request({
-        name: 'geo',
+        name: 'data-geo',
         url: `https://api.ipgeolocation.io/astronomy?apiKey=${geoKey}&lat=${Number(
             latitude
         ).toFixed(4)}&long=${Number(longitude).toFixed(4)}&date=${date}`,

@@ -8,7 +8,7 @@ const {
 
 module.exports = function getWeather() {
     return request({
-        name: 'weather',
+        name: 'data-weather',
         url: `https://api-metoffice.apiconnect.ibmcloud.com/metoffice/production/v0/forecasts/point/hourly?latitude=${latitude}&longitude=${longitude}`,
         options: {
             headers: {
