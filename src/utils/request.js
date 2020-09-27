@@ -22,7 +22,8 @@ module.exports = function request({ name, ...rest }) {
     const call = () => makeCall({ name, ...rest })
     try {
         const data = require(path.resolve(process.cwd(), `${name}.json`))
-        if (data && (data.length || Object.keys(data).length)) return data
+        if (data && (data.length || Object.keys(data).length))
+            return Promise.resolve(data)
         return call()
     } catch (e) {
         return call()
