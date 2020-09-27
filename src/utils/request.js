@@ -8,7 +8,7 @@ function onError(name, details) {
 }
 
 function makeCall({ name, url, options }) {
-    console.log(`fetching ${name} data`)
+    console.log(`fetching ${name.replace('data-', '')} data`)
     return fetch(url, options)
         .then((response) => {
             if (!response.ok) throw new Error(response)
@@ -22,8 +22,7 @@ module.exports = function request({ name, ...rest }) {
     const call = () => makeCall({ name, ...rest })
     try {
         const data = require(path.resolve(process.cwd(), `${name}.json`))
-        if (data && (data.length || Object.keys(data).length))
-            return Promise.resolve(data)
+        if (data && (data.length || Object.keys(data).length)) return data
         return call()
     } catch (e) {
         return call()
