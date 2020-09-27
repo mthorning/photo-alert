@@ -10,6 +10,7 @@ const {
 } = require('../package.json')
 
 const name = 'data-weather'
+
 function fetchWeather(resolve, count) {
     const dataOrPromise = request({
         name,
@@ -22,6 +23,7 @@ function fetchWeather(resolve, count) {
             },
         },
     })
+
     if (dataOrPromise.then) {
         dataOrPromise.then((response) => {
             const { modelRunDate } = response.features[0].properties
@@ -51,8 +53,5 @@ function fetchWeather(resolve, count) {
 }
 
 module.exports = function getWeather() {
-    let resolve
-    const weatherPromise = new Promise((res) => (resolve = res))
-    fetchWeather(resolve, 0)
-    return weatherPromise
+    return new Promise((resolve) => fetchWeather(resolve, 0))
 }
