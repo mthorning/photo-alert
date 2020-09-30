@@ -1,4 +1,4 @@
-const { format, addDays } = require('date-fns')
+const { format, addDays, addMinutes } = require('date-fns')
 const sigWeatherCodes = require('./significantWeatherCodes.js')
 const fs = require('fs')
 
@@ -49,7 +49,7 @@ function makeTidesList(tides) {
             .map(
                 ({ datetime, state }) =>
                     `<li>${state.replace('TIDE', '')} - ${format(
-                        new Date(datetime),
+                        addMinutes(new Date(datetime), 80),
                         'dd/MM HH:mm'
                     )}</li>`
             )
